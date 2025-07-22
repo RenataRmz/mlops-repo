@@ -1,6 +1,24 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
+=======
+# Data
+/data/
+
+# Mac OS-specific storage files
+.DS_Store
+
+# vim
+*.swp
+*.swo
+
+## https://github.com/github/gitignore/blob/e8554d85bf62e38d6db966a50d2064ac025fd82a/Python.gitignore
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+>>>>>>> b369a04 (Initial commit)
 *$py.class
 
 # C extensions
@@ -46,7 +64,11 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
+<<<<<<< HEAD
 *.py.cover
+=======
+*.py,cover
+>>>>>>> b369a04 (Initial commit)
 .hypothesis/
 .pytest_cache/
 cover/
@@ -68,8 +90,13 @@ instance/
 # Scrapy stuff:
 .scrapy
 
+<<<<<<< HEAD
 # Sphinx documentation
 docs/_build/
+=======
+# MkDocs documentation
+docs/site/
+>>>>>>> b369a04 (Initial commit)
 
 # PyBuilder
 .pybuilder/
@@ -106,6 +133,7 @@ ipython_config.py
 #   commonly ignored for libraries.
 #   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
 #poetry.lock
+<<<<<<< HEAD
 #poetry.toml
 
 # pdm
@@ -124,6 +152,19 @@ ipython_config.py
 #   in the .venv directory. It is recommended not to include this directory in version control.
 .pixi
 
+=======
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+>>>>>>> b369a04 (Initial commit)
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
 
@@ -136,7 +177,10 @@ celerybeat.pid
 
 # Environments
 .env
+<<<<<<< HEAD
 .envrc
+=======
+>>>>>>> b369a04 (Initial commit)
 .venv
 env/
 venv/
@@ -175,6 +219,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+<<<<<<< HEAD
 # Abstra
 # Abstra is an AI-powered process automation framework.
 # Ignore directories containing user credentials, local state, and settings.
@@ -188,10 +233,13 @@ cython_debug/
 #  you could uncomment the following to ignore the entire vscode folder
 # .vscode/
 
+=======
+>>>>>>> b369a04 (Initial commit)
 # Ruff stuff:
 .ruff_cache/
 
 # PyPI configuration file
+<<<<<<< HEAD
 .pypirc
 
 # Cursor
@@ -205,3 +253,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+=======
+.pypirc
+>>>>>>> b369a04 (Initial commit)
