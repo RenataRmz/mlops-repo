@@ -1,4 +1,6 @@
 [core]
-    remote = storage
+    remote = myremote
 ['remote "storage"']
     url = gdrive://1SsZQIcIqZ-xul_ni3L_h5kygJbxw7pXj
+['remote "myremote"']
+    url = s3://my-dvc-bucket-data/catastro_data/
