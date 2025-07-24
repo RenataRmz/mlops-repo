@@ -1,0 +1,5 @@
+outs:
+- md5: 2adc1e753048ccc737ac8576e8e2a6aa
+  size: 22738052
+  hash: md5
+  path: catastro2021_COYOACAN.csv

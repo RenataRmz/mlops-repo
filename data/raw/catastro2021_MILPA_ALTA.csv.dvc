@@ -1,0 +1,5 @@
+outs:
+- md5: 9315c2e5d4e31a13e05c033bfc8afef9
+  size: 1247645
+  hash: md5
+  path: catastro2021_MILPA_ALTA.csv

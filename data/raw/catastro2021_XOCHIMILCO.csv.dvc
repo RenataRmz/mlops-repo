@@ -1,0 +1,5 @@
+outs:
+- md5: dac50f1952d717d51d95a0088f43b74f
+  size: 7721210
+  hash: md5
+  path: catastro2021_XOCHIMILCO.csv

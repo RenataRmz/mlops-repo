@@ -1,0 +1,5 @@
+outs:
+- md5: 3b185b4781229a1e90ebc11b91934a2e
+  size: 13332357
+  hash: md5
+  path: catastro2021_IZTACALCO.csv

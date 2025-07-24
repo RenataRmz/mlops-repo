@@ -1,0 +1,5 @@
+outs:
+- md5: a3a5930ce56961f6f355264deb7a7032
+  size: 50279377
+  hash: md5
+  path: catastro2021_IZTAPALAPA.csv
