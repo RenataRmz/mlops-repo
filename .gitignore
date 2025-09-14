@@ -4,6 +4,7 @@ __pycache__/
 
 # Data
 !/data/**/*.dvc 
+!/data/**/*.csv
 
 # Mac OS-specific storage files
 .DS_Store
