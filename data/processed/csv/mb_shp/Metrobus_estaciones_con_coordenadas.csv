@@ -1,0 +1,325 @@
+SISTEMA,NOMBRE,LINEA,EST,CVE_EOD17,TIPO,ALCALDIAS,AÑO,CVE_EST,longitud,latitud
+Metrobús,París,7,,,Servicio temporal,Cuauhtémoc,2023.0,,-99.1559054549711,19.432394720045693
+Metrobús,Reforma,7,,,Servicio temporal,Cuauhtémoc,2023.0,,-99.15854425029424,19.431106483118526
+Metrobús,Hamburgo,7,,,Servicio temporal,Cuauhtémoc,2023.0,,-99.16279734075351,19.42917016143172
+Metrobús,El Ahuehuete,7,,,Servicio temporal,Cuauhtémoc,2023.0,,-99.16505863239207,19.428067900747724
+Metrobús,El Ángel,7,,,Servicio temporal,Cuauhtémoc,2023.0,,-99.16865753520594,19.42641814344347
+Metrobús,La Diana,7,,,Servicio temporal,Cuauhtémoc,2023.0,,-99.17251362831335,19.42458282932953
+Metrobús,Chapultepec,7,,,Servicio temporal,Cuauhtémoc,2023.0,,-99.17467360744344,19.423587082950952
+Metrobús,Alameda Tacubaya,7,,,Servicio temporal,Miguel Hidalgo,2023.0,,-99.18591745888251,19.40148534150958
+Metrobús,De La Salle,7,,,Servicio temporal,Cuauhtémoc / Miguel Hidalgo,2023.0,,-99.18346673516852,19.409020086326528
+Metrobús,De La Salle,7,,,Servicio temporal,Miguel Hidalgo,2023.0,,-99.18420775806,19.408368343301472
+Metrobús,Chapultepec,7,,,Servicio temporal,Cuauhtémoc,2023.0,,-99.17425848309948,19.424061180828488
+Metrobús,La Diana,7,,,Servicio temporal,Cuauhtémoc,2023.0,,-99.17089197013948,19.425668289991535
+Metrobús,El Ángel,7,,,Servicio temporal,Cuauhtémoc,2023.0,,-99.16864362041262,19.426686259386592
+Metrobús,El Ahuehuete,7,,,Servicio temporal,Cuauhtémoc,2023.0,,-99.16483425068824,19.428497763979376
+Metrobús,Hamburgo,7,,,Servicio temporal,Cuauhtémoc,2023.0,,-99.16150480944832,19.43004876459309
+Metrobús,Reforma,7,,,Servicio temporal,Cuauhtémoc,2023.0,,-99.15870539361195,19.43143344343557
+Metrobús,París,7,,,Servicio temporal,Cuauhtémoc,2023.0,,-99.15595807857136,19.432661819890622
+Metrobús,Aeropuerto T1,4,41.0,,,Venustiano Carranza,,MB0441,-99.083666,19.435307
+Metrobús,Aeropuerto T2,4,42.0,,,Venustiano Carranza,,MB0442,-99.07725,19.421476
+Metrobús,Delegación Cuauhtémoc,4,2.0,11121.0,Intermedia,Cuauhtémoc,2012.0,MB0402,-99.152416,19.442594
+Metrobús,Delegación Cuauhtémoc,4,48.0,11121.0,Intermedia,Cuauhtémoc,2012.0,MB0448,-99.152454,19.442136
+Metrobús,México Tenochtitlan,4,3.0,,Intermedia,Cuauhtémoc,,MB0403,-99.153269,19.439025
+Metrobús,México Tenochtitlan,4,49.0,,Intermedia,Cuauhtémoc,,MB0449,-99.153457,19.438641
+Metrobús,Plaza de la República,4,18.0,11142.0,Intermedia,Cuauhtémoc,2012.0,MB0418,-99.154138,19.436804
+Metrobús,Plaza de la República,4,60.0,11142.0,Intermedia,Cuauhtémoc,2012.0,MB0460,-99.153982,19.437128
+Metrobús,Amajac,4,19.0,11127.0,Transbordo,Cuauhtémoc,2012.0,MB0419,-99.153532,19.434159
+Metrobús,Amajac,4,70.0,11127.0,Transbordo,Cuauhtémoc,2012.0,MB0470,-99.153371,19.435014
+Metrobús,Defensoría Pública,4,61.0,,Intermedia,Cuauhtémoc,,MB0461,-99.151011,19.433364
+Metrobús,Defensoría Pública,4,20.0,,Intermedia,Cuauhtémoc,,MB0420,-99.15063,19.433106
+Metrobús,Vocacional 5,4,21.0,11152.0,Intermedia,Cuauhtémoc,2012.0,MB0421,-99.150217,19.431589
+Metrobús,Vocacional 5,4,62.0,11152.0,Intermedia,Cuauhtémoc,2012.0,MB0462,-99.150952,19.431756
+Metrobús,Juárez,4,22.0,11131.0,Transbordo,Cuauhtémoc,2012.0,MB0422,-99.148387,19.431305
+Metrobús,Juárez,4,63.0,11131.0,Transbordo,Cuauhtémoc,2012.0,MB0463,-99.147744,19.43126
+Metrobús,Mercados San Juan,4,23.0,,Intermedia,Cuauhtémoc,,MB0423,-99.143549,19.430607
+Metrobús,Mercados San Juan,4,64.0,,Intermedia,Cuauhtémoc,,MB0464,-99.144654,19.430772
+Metrobús,Eje Central,4,24.0,,Intermedia,Cuauhtémoc,,MB0424,-99.141929,19.430334
+Metrobús,Eje Central,4,65.0,,Intermedia,Cuauhtémoc,,MB0465,-99.140797,19.430304
+Metrobús,El Salvador,4,25.0,11124.0,Intermedia,Cuauhtémoc,2012.0,MB0425,-99.138538,19.429874
+Metrobús,El Salvador,4,66.0,11124.0,Intermedia,Cuauhtémoc,2012.0,MB0466,-99.139418,19.430071
+Metrobús,Isabel La Católica,4,26.0,11130.0,Intermedia,Cuauhtémoc,2012.0,MB0426,-99.137009,19.429616
+Metrobús,Isabel La Católica,4,67.0,11130.0,Intermedia,Cuauhtémoc,2012.0,MB0467,-99.136586,19.429692
+Metrobús,20 de Noviembre,4,44.0,,Intermedia,Cuauhtémoc,,MB0444,-99.1341665,19.4292007
+Metrobús,Museo de la Ciudad,4,27.0,11139.0,Intermedia,Cuauhtémoc,2012.0,MB0427,-99.1328898,19.4290292
+Metrobús,Pino Suárez,4,28.0,11141.0,Intermedia,Cuauhtémoc,2012.0,MB0428,-99.132782,19.426661
+Metrobús,Las Cruces,4,30.0,11134.0,Intermedia,Cuauhtémoc,2012.0,MB0430,-99.129918,19.426155
+Metrobús,San Pablo,4,46.0,,Intermedia,Cuauhtémoc,,MB0446,-99.130771,19.4255331
+Metrobús,La Merced,4,32.0,,Intermedia,Cuauhtémoc,,MB0432,-99.1259158,19.4256392
+Metrobús,Mercado de Sonora Sur,4,47.0,,Intermedia,Cuauhtémoc,,MB0447,-99.1267417,19.4231001
+Metrobús,Cecilio Robelo,4,34.0,11119.0,Intermedia,Venustiano Carranza,2012.0,MB0434,-99.11987,19.425174
+Metrobús,Cecilio Robelo,4,71.0,11119.0,Intermedia,Venustiano Carranza,2012.0,MB0471,-99.119044,19.425483
+Metrobús,Ing. Eduardo Molina,4,35.0,11122.0,Intermedia,Venustiano Carranza,2012.0,MB0435,-99.116228,19.427177
+Metrobús,Hospital Balbuena,4,36.0,11129.0,Intermedia,Venustiano Carranza,2012.0,MB0436,-99.116153,19.425098
+Metrobús,Moctezuma,4,37.0,11137.0,Transbordo,Venustiano Carranza,2012.0,MB0437,-99.111979,19.426894
+Metrobús,Terminal San Lázaro,4,43.0,,,Venustiano Carranza,,MB0443,-99.115171,19.430911
+Metrobús,Terminal San Lázaro,4,68.0,,,Venustiano Carranza,,MB0468,-99.115428,19.431116
+Metrobús,Archivo General de la Nación,4,14.0,11116.0,Transbordo,Venustiano Carranza,2012.0,MB0414,-99.115176,19.435363
+Metrobús,Archivo General de la Nación,4,59.0,11116.0,Transbordo,Venustiano Carranza,2012.0,MB0459,-99.114618,19.434968
+Metrobús,Morelos,4,13.0,11138.0,Intermedia,Venustiano Carranza,2012.0,MB0413,-99.119001,19.435813
+Metrobús,Morelos,4,58.0,11138.0,Intermedia,Venustiano Carranza,2012.0,MB0458,-99.118245,19.435788
+Metrobús,Ferrocarril de Cintura,4,12.0,11126.0,Intermedia,Venustiano Carranza,2012.0,MB0412,-99.121614,19.436
+Metrobús,Ferrocarril de Cintura,4,57.0,11126.0,Intermedia,Venustiano Carranza,2012.0,MB0457,-99.120809,19.436142
+Metrobús,Mixcalco,4,11.0,11136.0,Intermedia,Cuauhtémoc / Venustiano Carranza,2012.0,MB0411,-99.123413,19.436357
+Metrobús,Mixcalco,4,56.0,11136.0,Intermedia,Cuauhtémoc / Venustiano Carranza,2012.0,MB0456,-99.124156,19.436324
+Metrobús,Teatro del Pueblo,4,10.0,11149.0,Intermedia,Cuauhtémoc,2012.0,MB0410,-99.127622,19.436769
+Metrobús,Teatro del Pueblo,4,55.0,11149.0,Intermedia,Cuauhtémoc,2012.0,MB0455,-99.127042,19.43685
+Metrobús,República de Argentina,4,54.0,11145.0,Intermedia,Cuauhtémoc,2012.0,MB0454,-99.131999,19.437406
+Metrobús,República de Argentina,4,9.0,11145.0,Intermedia,Cuauhtémoc,2012.0,MB0409,-99.131194,19.437356
+Metrobús,República de Chile,4,8.0,11146.0,Intermedia,Cuauhtémoc,2012.0,MB0408,-99.135896,19.437965
+Metrobús,República de Chile,4,69.0,11146.0,Intermedia,Cuauhtémoc,2012.0,MB0469,-99.135025,19.437884
+Metrobús,Teatro Blanquita,4,7.0,11148.0,Intermedia,Cuauhtémoc,2012.0,MB0407,-99.139973,19.438636
+Metrobús,Teatro Blanquita,4,53.0,11148.0,Intermedia,Cuauhtémoc,2012.0,MB0453,-99.139085,19.438428
+Metrobús,Bellas Artes,4,6.0,11117.0,Intermedia,Cuauhtémoc,2012.0,MB0406,-99.141717,19.436405
+Metrobús,Bellas Artes,4,52.0,11117.0,Intermedia,Cuauhtémoc,2012.0,MB0452,-99.141821,19.436407
+Metrobús,Hidalgo,4,5.0,11128.0,Transbordo,Cuauhtémoc,2012.0,MB0405,-99.14615,19.437298
+Metrobús,Hidalgo,4,51.0,11128.0,Transbordo,Cuauhtémoc,2012.0,MB0451,-99.146212,19.43728
+Metrobús,Museo San Carlos,4,4.0,11140.0,Intermedia,Cuauhtémoc,2012.0,MB0404,-99.150783,19.438274
+Metrobús,Museo San Carlos,4,50.0,11140.0,Intermedia,Cuauhtémoc,2012.0,MB0450,-99.150603,19.438226
+Metrobús,Buenavista,4,1.0,11118.0,Terminal / Transbordo,Cuauhtémoc,2012.0,MB0401,-99.152271,19.444863
+Metrobús,Pantitlán,4,38.0,,Terminal,Venustiano Carranza,2021.0,MB0438,-99.0734542,19.4170652
+Metrobús,Calle 6,4,39.0,,Intermedia,Venustiano Carranza / Iztacalco,2022.0,MB0439,-99.0583981,19.4211477
+Metrobús,Alameda Oriente,4,40.0,,Terminal,Venustiano Carranza / Estado de México - Nezahualcóyotl,2022.0,MB0440,-99.0532703,19.4307516
+Metrobús,Mercado de Sonora,4,33.0,11135.0,Intermedia,Venustiano Carranza,2012.0,MB0433,-99.123411,19.423241
+Metrobús,Pino Suárez Sur,4,45.0,,Intermedia,Cuauhtémoc,,MB0445,-99.1337852,19.4260949
+Metrobús,Dep. 18 de Marzo,1,2.0,11013.0,Transbordo,Gustavo A. Madero,2005.0,MB0102,-99.12453169877706,19.486285379281284
+Metrobús,Eúzkaro,1,3.0,11018.0,Intermedia,Gustavo A. Madero,2005.0,MB0103,-99.12763223387697,19.482519101724726
+Metrobús,Potrero,1,4.0,11038.0,Intermedia,Gustavo A. Madero,2005.0,MB0104,-99.13246823843684,19.476638471332368
+Metrobús,La Raza,1,5.0,11029.0,Transbordo,Gustavo A. Madero,2005.0,MB0105,-99.13898666414428,19.468700050075963
+Metrobús,Circuito,1,6.0,11008.0,Transbordo,Cuauhtémoc,2005.0,MB0106,-99.14400676821562,19.462612766654026
+Metrobús,San Simón,1,7.0,11042.0,Intermedia,Cuauhtémoc,2005.0,MB0107,-99.14642434507316,19.45963253601484
+Metrobús,Manuel González,1,8.0,11030.0,Intermedia,Cuauhtémoc,2005.0,MB0108,-99.14938851582616,19.456735562915632
+Metrobús,Buenavista,1,9.0,11004.0,Transbordo,Cuauhtémoc,2005.0,MB0109,-99.15313066525816,19.446837951491197
+Metrobús,El Chopo,1,10.0,11017.0,Intermedia,Cuauhtémoc,2005.0,MB0110,-99.15441113382454,19.443345082590103
+Metrobús,Revolución,1,11.0,11040.0,Intermedia,Cuauhtémoc,2005.0,MB0111,-99.15541037980192,19.44035278800546
+Metrobús,Plaza de la República,1,12.0,11036.0,Transbordo,Cuauhtémoc,2005.0,MB0112,-99.157318741941,19.436045966675938
+Metrobús,Reforma,1,13.0,11039.0,Transbordo,Cuauhtémoc,2005.0,MB0113,-99.15871450973135,19.432899100304866
+Metrobús,Hamburgo,1,14.0,11023.0,Transbordo,Cuauhtémoc,2005.0,MB0114,-99.16123541791006,19.427524408488075
+Metrobús,Insurgentes,1,15.0,11022.0,Terminal,Cuauhtémoc,2005.0,MB0115,-99.1628838165615,19.423720529286115
+Metrobús,Durango,1,16.0,11015.0,Intermedia,Cuauhtémoc,2005.0,MB0116,-99.16405562946696,19.419932751962484
+Metrobús,Álvaro Obregón,1,17.0,11002.0,Intermedia,Cuauhtémoc,2005.0,MB0117,-99.16505581629376,19.416550991835987
+Metrobús,Sonora,1,18.0,11044.0,Intermedia,Cuauhtémoc,2005.0,MB0118,-99.16612421930984,19.413271925410815
+Metrobús,Campeche,1,19.0,11005.0,Intermedia,Cuauhtémoc,2005.0,MB0119,-99.1672655931971,19.409768753876367
+Metrobús,Chilpancingo,1,20.0,11007.0,Intermedia,Cuauhtémoc,2005.0,MB0120,-99.16830486099536,19.406578833117695
+Metrobús,Nuevo León,1,21.0,11032.0,Transbordo,Cuauhtémoc,2005.0,MB0121,-99.16978385573115,19.40204318197165
+Metrobús,La Piedad,1,22.0,11028.0,Transbordo,Benito Juárez,2005.0,MB0122,-99.17111120244832,19.397970337893263
+Metrobús,Polifórum,1,23.0,11037.0,Transbordo,Benito Juárez,2005.0,MB0123,-99.17262501859518,19.393299203269635
+Metrobús,Nápoles,1,24.0,11031.0,Transbordo,Benito Juárez,2005.0,MB0124,-99.1737944114527,19.389690652430065
+Metrobús,Colonia del Valle,1,25.0,11011.0,Transbordo,Benito Juárez,2005.0,MB0125,-99.17509207046132,19.385686102673304
+Metrobús,Cd. de los Deportes,1,26.0,11009.0,Intermedia,Benito Juárez,2005.0,MB0126,-99.17614016128276,19.382451565772385
+Metrobús,Parque Hundido,1,27.0,11034.0,Intermedia,Benito Juárez,2005.0,MB0127,-99.1770684026935,19.379586786836672
+Metrobús,Félix Cuevas,1,28.0,11019.0,Intermedia,Benito Juárez,2005.0,MB0128,-99.17879652760097,19.37425309507362
+Metrobús,Río Churubusco,1,29.0,11041.0,Intermedia,Benito Juárez,2005.0,MB0129,-99.18056981102607,19.36877965132617
+Metrobús,Teatro de los Insurgentes,1,30.0,11045.0,Intermedia,Benito Juárez,2005.0,MB0130,-99.18182520026052,19.3649263909228
+Metrobús,José María Velasco,1,31.0,11025.0,Intermedia,Benito Juárez / Álvaro Obregón,2005.0,MB0131,-99.1828497749714,19.36175898949258
+Metrobús,Francia,1,32.0,11020.0,Intermedia,Álvaro Obregón,2005.0,MB0132,-99.18391155626514,19.358476430441907
+Metrobús,Olivo,1,33.0,11033.0,Intermedia,Álvaro Obregón,2005.0,MB0133,-99.18515664834338,19.35462698244498
+Metrobús,Altavista,1,34.0,11001.0,Intermedia,Álvaro Obregón,2005.0,MB0134,-99.18635640203826,19.35090384936112
+Metrobús,La Bombilla,1,35.0,11026.0,Intermedia,Álvaro Obregón,2005.0,MB0135,-99.1877262179368,19.346818513886824
+Metrobús,Doctor Gálvez,1,36.0,11014.0,Terminal,Álvaro Obregón,2005.0,MB0136,-99.1900369636448,19.340707214064032
+Metrobús,Cd. Universitaria,1,37.0,11010.0,Intermedia,Coyoacán,2008.0,MB0137,-99.18847295077715,19.32294736417755
+Metrobús,C.C.U.,1,38.0,11006.0,Intermedia,Coyoacán,2008.0,MB0138,-99.18752695261456,19.315162166987157
+Metrobús,Perisur,1,39.0,11035.0,Intermedia,Coyoacán,2008.0,MB0139,-99.18612669749076,19.30410963205269
+Metrobús,Villa Olímpica,1,40.0,11046.0,Intermedia,Tlalpan,2008.0,MB0140,-99.18551481212351,19.29909176437757
+Metrobús,Corregidora,1,41.0,11012.0,Intermedia,Tlalpan,2008.0,MB0141,-99.18103173192884,19.294070084678506
+Metrobús,Ayuntamiento,1,42.0,11003.0,Intermedia,Tlalpan,2008.0,MB0142,-99.1775366902643,19.292595463978948
+Metrobús,Fuentes Brotantes,1,43.0,11021.0,Intermedia,Tlalpan,2008.0,MB0143,-99.1745975716401,19.288103587844745
+Metrobús,Santa Úrsula,1,44.0,11043.0,Intermedia,Tlalpan,2008.0,MB0144,-99.17530107462863,19.28326276424037
+Metrobús,La Joya,1,45.0,11027.0,Intermedia,Tlalpan,2008.0,MB0145,-99.1699925731304,19.280322133742757
+Metrobús,El Caminero,1,46.0,11016.0,Terminal,Tlalpan,2008.0,MB0146,-99.16907765168789,19.27931377110038
+Metrobús,Tacubaya,2,1.0,11077.0,Terminal,Miguel Hidalgo,2008.0,MB0201,-99.18700776326118,19.40199476042971
+Metrobús,Parque Lira,2,2.0,11070.0,Intermedia,Miguel Hidalgo,2008.0,MB0202,-99.1891043635208,19.407793172832054
+Metrobús,Antonio Maceo,2,3.0,11050.0,Intermedia,Miguel Hidalgo,2008.0,MB0203,-99.18590086578114,19.4048746245951
+Metrobús,De la Salle,2,4.0,11057.0,Intermedia,Cuauhtémoc / Miguel Hidalgo,2008.0,MB0204,-99.18350884873917,19.40758954891053
+Metrobús,Patriotismo,2,5.0,11071.0,Intermedia,Cuauhtémoc / Miguel Hidalgo,2008.0,MB0205,-99.17737148120328,19.40556676448849
+Metrobús,Escandón,2,6.0,11061.0,Intermedia,Cuauhtémoc / Miguel Hidalgo,2008.0,MB0206,-99.1738288990292,19.40440985176069
+Metrobús,Nuevo León,2,7.0,11069.0,Transbordo,Cuauhtémoc / Miguel Hidalgo,2008.0,MB0207,-99.17040793411589,19.40350067459544
+Metrobús,Viaducto,2,8.0,11081.0,Intermedia,Cuauhtémoc / Benito Juárez,2008.0,MB0208,-99.1680933404479,19.401314543451836
+Metrobús,Amores,2,9.0,11048.0,Intermedia,Benito Juárez,2008.0,MB0209,-99.1638157475972,19.396878357792495
+Metrobús,Etiopía,2,10.0,11072.0,Terminal / Transbordo,Benito Juárez,2008.0,MB0210,-99.15500152333742,19.395841134451047
+Metrobús,Doctor Vértiz,2,11.0,11059.0,Intermedia,Benito Juárez,2008.0,MB0211,-99.151707679124,19.39560755996021
+Metrobús,Centro SCOP,2,12.0,11054.0,Intermedia,Benito Juárez,2008.0,MB0212,-99.14675568044012,19.395248034972724
+Metrobús,Álamos,2,13.0,11047.0,Intermedia,Benito Juárez,2008.0,MB0213,-99.14294279685144,19.39475309694475
+Metrobús,Xola,2,14.0,11082.0,Intermedia,Benito Juárez,2008.0,MB0214,-99.14025137073712,19.39436504913605
+Metrobús,Las Américas,2,15.0,11066.0,Intermedia,Benito Juárez,2008.0,MB0215,-99.13434908408142,19.393459454690095
+Metrobús,Andrés Molina Enríquez,2,16.0,11049.0,Intermedia,Iztacalco,2008.0,MB0216,-99.1297001048689,19.397677434417723
+Metrobús,La Viga,2,17.0,11065.0,Intermedia,Iztacalco,2008.0,MB0217,-99.12456230678568,19.398064619795605
+Metrobús,Coyuya,2,18.0,11056.0,Intermedia,Iztacalco,2008.0,MB0218,-99.11678225505422,19.398283385365907
+Metrobús,Metro Coyuya,2,19.0,,Transbordo,Iztacalco,2008.0,MB0219,-99.11346516727454,19.398329416102445
+Metrobús,Canela,2,20.0,11052.0,Intermedia,Iztacalco,2008.0,MB0220,-99.10933775978602,19.397848657666984
+Metrobús,Tlacotal,2,21.0,11079.0,Intermedia,Iztacalco,2008.0,MB0221,-99.10391106047608,19.3972190805004
+Metrobús,Goma,2,22.0,11063.0,Intermedia,Iztacalco,2008.0,MB0222,-99.1000071986185,19.396890745591413
+Metrobús,Iztacalco,2,23.0,11064.0,Intermedia,Iztacalco,2008.0,MB0223,-99.0959575586171,19.39654706389362
+Metrobús,UPIICSA,2,24.0,11080.0,Intermedia,Iztacalco,2008.0,MB0224,-99.09039212721716,19.393935027363515
+Metrobús,El Rodeo,2,25.0,11060.0,Intermedia,Iztacalco,2008.0,MB0225,-99.0870802443113,19.391661319394384
+Metrobús,Río Tecolutla,2,26.0,11075.0,Intermedia,Iztapalapa,2008.0,MB0226,-99.0831500155784,19.389056448112665
+Metrobús,Río Mayo,2,27.0,11074.0,Intermedia,Iztapalapa,2008.0,MB0227,-99.0800235675874,19.386961805905234
+Metrobús,Rojo Gómez,2,28.0,11076.0,Intermedia,Iztapalapa,2008.0,MB0228,-99.07636651329226,19.38450894412519
+Metrobús,Río Frío,2,29.0,11073.0,Intermedia,Iztacalco / Iztapalapa,2008.0,MB0229,-99.07428095755373,19.387628405483152
+Metrobús,Del Moral,2,30.0,11058.0,Intermedia,Iztapalapa,2008.0,MB0230,-99.07092025127191,19.384197176822695
+Metrobús,Leyes de Reforma,2,31.0,11067.0,Intermedia,Iztacalco / Iztapalapa,2008.0,MB0231,-99.0658196192536,19.38347015851191
+Metrobús,CCH Oriente,2,32.0,11053.0,Intermedia,Iztacalco / Iztapalapa,2008.0,MB0232,-99.06079184774052,19.38332696513175
+Metrobús,Const. de Apatzingán,2,33.0,11055.0,Intermedia,Iztacalco / Iztapalapa,2008.0,MB0233,-99.05984821878982,19.389031206363967
+Metrobús,Canal de San Juan,2,34.0,11051.0,Intermedia,Iztapalapa,2008.0,MB0234,-99.05654752017976,19.396711223779064
+Metrobús,Gral. Antonio de León,2,35.0,11062.0,Intermedia,Iztapalapa,2008.0,MB0235,-99.05173381363612,19.385381301595025
+Metrobús,Nicolás Bravo,2,36.0,11068.0,Intermedia,Iztapalapa,2008.0,MB0236,-99.05092532012848,19.393495417171533
+Metrobús,Tepalcates,2,37.0,11078.0,Terminal,Iztapalapa,2008.0,MB0237,-99.04761259244655,19.390767861575902
+Metrobús,Tenayuca,3,1.0,11112.0,Terminal,Gustavo A. Madero,2011.0,MB0301,-99.17011135799122,19.5286169823938
+Metrobús,S. J. de la Escalera,3,2.0,11111.0,Intermedia,Gustavo A. Madero,2011.0,MB0302,-99.16555534825105,19.5227187693797
+Metrobús,Progreso Nacional,3,3.0,11109.0,Intermedia,Gustavo A. Madero,2011.0,MB0303,-99.16377197209005,19.519688433851808
+Metrobús,Tres Anegas,3,4.0,11115.0,Intermedia,Gustavo A. Madero,2011.0,MB0304,-99.161932830067,19.51550543826689
+Metrobús,Júpiter,3,5.0,11098.0,Intermedia,Gustavo A. Madero / Estado de México - Tlalnepantla,2011.0,MB0305,-99.1592357567791,19.508614111481233
+Metrobús,La Patera,3,6.0,11099.0,Intermedia,Gustavo A. Madero / Estado de México - Tlalnepantla,2011.0,MB0306,-99.15726666835556,19.503663641847012
+Metrobús,Poniente 146,3,7.0,11108.0,Intermedia,Gustavo A. Madero / Azcapotzalco,2011.0,MB0307,-99.15588466395477,19.49998608348036
+Metrobús,Montevideo,3,8.0,11103.0,Transbordo,Gustavo A. Madero / Azcapotzalco,2011.0,MB0308,-99.15445675394804,19.49610580836447
+Metrobús,Poniente 134,3,9.0,11107.0,Intermedia,Gustavo A. Madero / Azcapotzalco,2011.0,MB0309,-99.15317061311131,19.492687505131094
+Metrobús,Poniente 128,3,10.0,11106.0,Intermedia,Gustavo A. Madero / Azcapotzalco,2011.0,MB0310,-99.1519556605812,19.48954592664275
+Metrobús,M. de las Salinas,3,11.0,11101.0,Intermedia,Gustavo A. Madero / Azcapotzalco,2011.0,MB0311,-99.14985948376416,19.483881525125724
+Metrobús,Coltongo,3,12.0,11087.0,Intermedia,Gustavo A. Madero / Azcapotzalco,2011.0,MB0312,-99.14832741738424,19.479851429089223
+Metrobús,Cuitláhuac,3,13.0,11089.0,Intermedia,Gustavo A. Madero / Azcapotzalco,2011.0,MB0313,-99.14616040328546,19.47415067407713
+Metrobús,Héroe de Nacozari,3,14.0,11092.0,Intermedia,Gustavo A. Madero / Azcapotzalco,2011.0,MB0314,-99.1450385302764,19.47116229844311
+Metrobús,Hospital La Raza,3,15.0,11095.0,Intermedia,Gustavo A. Madero / Azcapotzalco,2011.0,MB0315,-99.1438464714028,19.467990084991268
+Metrobús,La Raza,3,16.0,11100.0,Terminal / Transbordo,Gustavo A. Madero,2011.0,MB0316,-99.14095197700036,19.467325707115016
+Metrobús,Circuito,3,17.0,11086.0,Transbordo,Cuauhtémoc,2011.0,MB0317,-99.14406240800255,19.463292598767524
+Metrobús,Tolnahuác,3,18.0,11114.0,Intermedia,Cuauhtémoc,2011.0,MB0318,-99.14406434468908,19.45988980177588
+Metrobús,Tlatelolco,3,19.0,11113.0,Intermedia,Cuauhtémoc,2011.0,MB0319,-99.145045586518,19.455559396959604
+Metrobús,R. Flores Magón,3,20.0,11110.0,Intermedia,Cuauhtémoc,2011.0,MB0320,-99.14590431391812,19.45178182881993
+Metrobús,Guerrero,3,21.0,11091.0,Intermedia,Cuauhtémoc,2011.0,MB0321,-99.14721203547325,19.446028781312265
+Metrobús,Buenavista III,3,22.0,11084.0,Terminal,Cuauhtémoc,2011.0,MB0322,-99.15215506569454,19.44574895861706
+Metrobús,Mina,3,23.0,11102.0,Intermedia,Cuauhtémoc,2011.0,MB0323,-99.14854680022268,19.440584238229647
+Metrobús,Hidalgo,3,24.0,11093.0,Transbordo,Cuauhtémoc,2011.0,MB0324,-99.14721354299826,19.43600578401691
+Metrobús,Juárez,3,25.0,11097.0,Transbordo,Cuauhtémoc,2011.0,MB0325,-99.14803226273672,19.43129036914475
+Metrobús,Balderas,3,26.0,11083.0,Terminal,Cuauhtémoc,2011.0,MB0326,-99.1487392095774,19.428065823281596
+Metrobús,Cuauhtémoc,3,27.0,11088.0,Intermedia,Cuauhtémoc,2011.0,MB0327,-99.15370156831096,19.42495914337271
+Metrobús,Jardín Pushkin,3,28.0,11096.0,Intermedia,Cuauhtémoc,2011.0,MB0328,-99.15408364465848,19.420398689564426
+Metrobús,Hospital General,3,29.0,11094.0,Intermedia,Cuauhtémoc,2011.0,MB0329,-99.15455902138496,19.41443601939125
+Metrobús,Doctor Márquez,3,30.0,11090.0,Intermedia,Cuauhtémoc,2011.0,MB0330,-99.15484499377274,19.411111393261983
+Metrobús,Centro Médico,3,31.0,11085.0,Intermedia,Cuauhtémoc,2011.0,MB0331,-99.15512667828908,19.407273230594217
+Metrobús,Obrero Mundial,3,32.0,11104.0,Intermedia,Benito Juárez,2011.0,MB0332,-99.15560230925271,19.4010601791472
+Metrobús,Etiopía,3,33.0,11105.0,Transbordo,Benito Juárez,2011.0,MB0333,-99.15590245505062,19.39699688612623
+Metrobús,Luz Saviñón,3,34.0,,Intermedia,Benito Juárez,2021.0,MB0334,-99.1563460467104,19.391592993258197
+Metrobús,Eugenia,3,35.0,,Intermedia,Benito Juárez,2021.0,MB0335,-99.15722711704656,19.385953800913427
+Metrobús,División del Norte,3,36.0,,Intermedia,Benito Juárez,2021.0,MB0336,-99.15874369784537,19.3805052595784
+Metrobús,Miguel Laurent,3,37.0,,Intermedia,Benito Juárez,2021.0,MB0337,-99.16022982003976,19.37483682724192
+Metrobús,Pueblo Sta. Cruz Atoyac,3,38.0,,Terminal,Benito Juárez,2021.0,MB0338,-99.16100881216738,19.371569277530455
+Metrobús,Río de Los Remedios,5,1.0,11163.0,Terminal,Gustavo A. Madero / Estado de México - Ecatepec,2013.0,MB0501,-99.08593450039032,19.507111490097344
+Metrobús,314 M. New's Divine,5,2.0,11153.0,Intermedia,Gustavo A. Madero,2013.0,MB0502,-99.08872828160582,19.500606215084737
+Metrobús,5 de Mayo,5,3.0,11154.0,Intermedia,Gustavo A. Madero,2013.0,MB0503,-99.09017761443822,19.497090158579475
+Metrobús,Vasco de Quiroga,5,4.0,11169.0,Intermedia,Gustavo A. Madero,2013.0,MB0504,-99.09178273408934,19.493296020128245
+Metrobús,El Coyol,5,5.0,11158.0,Intermedia,Gustavo A. Madero,2013.0,MB0505,-99.09417599898956,19.48753788436704
+Metrobús,Preparatoria 3,5,6.0,11161.0,Intermedia,Gustavo A. Madero,2013.0,MB0506,-99.09600930284314,19.483362132501473
+Metrobús,San Juan de Aragón,5,7.0,11166.0,Transbordo,Gustavo A. Madero,2013.0,MB0507,-99.09750645961093,19.479868545989383
+Metrobús,Río de Guadalupe,5,8.0,11164.0,Intermedia,Gustavo A. Madero,2013.0,MB0508,-99.09911652230174,19.476027585363525
+Metrobús,Talismán,5,9.0,11168.0,Intermedia,Gustavo A. Madero,2013.0,MB0509,-99.10124294394696,19.47101723626883
+Metrobús,Victoria,5,10.0,11170.0,Intermedia,Gustavo A. Madero,2013.0,MB0510,-99.10279733696792,19.467341524547933
+Metrobús,Oriente 101,5,11.0,11160.0,Intermedia,Gustavo A. Madero,2013.0,MB0511,-99.10548605263332,19.460974814399073
+Metrobús,Río Santa Coleta,5,12.0,11165.0,Intermedia,Gustavo A. Madero,2013.0,MB0512,-99.10749291622152,19.456058581060113
+Metrobús,Río Consulado,5,13.0,11162.0,Intermedia,Gustavo A. Madero,2013.0,MB0513,-99.10844651603702,19.453664846824875
+Metrobús,Canal del Norte,5,14.0,11156.0,Intermedia,Venustiano Carranza,2013.0,MB0514,-99.11035715164074,19.449686388775383
+Metrobús,Deportivo E. Molina,5,15.0,11157.0,Intermedia,Venustiano Carranza,2013.0,MB0515,-99.1121754533065,19.444699160776924
+Metrobús,Mercado Morelos,5,16.0,11159.0,Intermedia,Venustiano Carranza,2013.0,MB0516,-99.11343961635318,19.441324278658463
+Metrobús,San Lázaro,5,18.0,11167.0,Terminal / Transbordo,Venustiano Carranza,2013.0,MB0518,-99.11527608085343,19.43082245537709
+Metrobús,Moctezuma,5,19.0,,Transbordo,Venustiano Carranza,2020.0,MB0519,-99.11147408563296,19.42558579366586
+Metrobús,Venustiano Carranza,5,20.0,,Intermedia,Venustiano Carranza,2020.0,MB0520,-99.11221871981483,19.418374104890884
+Metrobús,Av. del Taller,5,21.0,,Intermedia,Venustiano Carranza,2020.0,MB0521,-99.1127823494792,19.41293549075205
+Metrobús,Mixiuhca,5,22.0,,Intermedia,Venustiano Carranza,2020.0,MB0522,-99.11332708914026,19.407866014490576
+Metrobús,Hospital Gral. Troncoso,5,23.0,,Intermedia,Venustiano Carranza / Iztacalco,2020.0,MB0523,-99.11356963456676,19.4054561966269
+Metrobús,Metro Coyuya,5,24.0,,Transbordo,Iztacalco,2020.0,MB0524,-99.11353369739032,19.39939032369651
+Metrobús,Recreo,5,25.0,,Intermedia,Iztacalco,2020.0,MB0525,-99.11361031884276,19.39385118593591
+Metrobús,Oriente 116,5,26.0,,Intermedia,Iztacalco,2020.0,MB0526,-99.11265792886311,19.390264504538923
+Metrobús,Colegio de Bachilleres 3,5,27.0,,Intermedia,Iztacalco,2020.0,MB0527,-99.11166191497368,19.38632392039578
+Metrobús,Canal Apatlaco,5,28.0,,Intermedia,Iztacalco,2020.0,MB0528,-99.11088876730844,19.382886983569986
+Metrobús,Apatlaco,5,29.0,,Intermedia,Iztapalapa,2020.0,MB0529,-99.10907292828855,19.37805788653535
+Metrobús,Aculco,5,30.0,,Intermedia,Iztapalapa,2020.0,MB0530,-99.10797509545688,19.374875117944935
+Metrobús,Churubusco Ote.,5,31.0,,Intermedia,Iztapalapa,2020.0,MB0531,-99.10786063837617,19.37159464552929
+Metrobús,Escuadrón 201,5,32.0,,Intermedia,Iztapalapa,2020.0,MB0532,-99.10919216338262,19.36604308330037
+Metrobús,Atanasio G. Sarabia,5,33.0,,Intermedia,Iztapalapa,2020.0,MB0533,-99.11028378479485,19.361257339629237
+Metrobús,Ermita-Iztapalapa,5,34.0,,Intermedia,Iztapalapa,2020.0,MB0534,-99.1113358138378,19.35662829775834
+Metrobús,Ganaderos,5,35.0,,Intermedia,Iztapalapa,2020.0,MB0535,-99.11091775120975,19.35157515131118
+Metrobús,Pueblo de los Reyes,5,36.0,,Intermedia,Iztapalapa,2020.0,MB0536,-99.11134115107583,19.34797817907918
+Metrobús,Barrio San Antonio,5,37.0,,Intermedia,Iztapalapa,2020.0,MB0537,-99.11243639360195,19.343126250187428
+Metrobús,Calz. Taxqueña,5,38.0,,Intermedia,Iztapalapa,2020.0,MB0538,-99.11299650350853,19.338755485617135
+Metrobús,Cafetales,5,39.0,,Intermedia,Coyoacán,2020.0,MB0539,-99.1131493568214,19.333724451928003
+Metrobús,ESIME Culhuacán,5,40.0,,Intermedia,Coyoacán,2020.0,MB0540,-99.11353675786918,19.32921119994105
+Metrobús,Manuela Sáenz,5,41.0,,Intermedia,Coyoacán,2020.0,MB0541,-99.11396646749468,19.324206883029618
+Metrobús,La Virgen,5,42.0,,Intermedia,Coyoacán,2020.0,MB0542,-99.11362313202136,19.32067531608638
+Metrobús,Tepetlapa,5,43.0,,Intermedia,Coyoacán,2020.0,MB0543,-99.11162694598823,19.31634199151473
+Metrobús,Las Bombas,5,44.0,,Intermedia,Coyoacán,2020.0,MB0544,-99.11067016080771,19.311838422682666
+Metrobús,Vista Hermosa,5,45.0,,Intermedia,Coyoacán,2021.0,MB0545,-99.11179134945075,19.306812450932117
+Metrobús,Calz. del Hueso,5,46.0,,Intermedia,Coyoacán / Tlalpan,2021.0,MB0546,-99.11334557028204,19.301571940686618
+Metrobús,Cañaverales,5,47.0,,Intermedia,Tlalpan,2021.0,MB0547,-99.1144727032877,19.29554512707654
+Metrobús,Muyuguarda,5,48.0,,Intermedia,Xochimilco,2021.0,MB0548,-99.11554110048765,19.285059408791955
+Metrobús,Circuito Cuemanco,5,49.0,,Intermedia,Xochimilco,2021.0,MB0549,-99.11669305916529,19.281406895692218
+Metrobús,DIF Xochimilco,5,50.0,,Intermedia,Xochimilco,2021.0,MB0550,-99.11766159163724,19.278191035665575
+Metrobús,Preparatoria 1,5,51.0,,Terminal,Xochimilco,2021.0,MB0551,-99.1207959232013,19.27337399733259
+Metrobús,El Rosario,6,1.0,11184.0,Terminal,Azcapotzalco,2016.0,MB0601,-99.19954567196125,19.50716631284481
+Metrobús,C. de Bachilleres 1,6,2.0,11177.0,Intermedia,Azcapotzalco,2016.0,MB0602,-99.19731457976133,19.51163711523765
+Metrobús,De Las Culturas,6,3.0,11179.0,Intermedia,Azcapotzalco / Estado de México - Tlalnepantla,2016.0,MB0603,-99.19260534067485,19.510944816535513
+Metrobús,F.F.C.C. Nacionales,6,4.0,11185.0,Intermedia,Azcapotzalco,2016.0,MB0604,-99.18859764733908,19.50487347822404
+Metrobús,UAM Azcapotzalco,6,5.0,11205.0,Intermedia,Azcapotzalco,2016.0,MB0605,-99.18398723579402,19.504008672336425
+Metrobús,Tecnoparque,6,6.0,11204.0,Intermedia,Azcapotzalco,2016.0,MB0606,-99.17887631199248,19.502473142993285
+Metrobús,Norte 59,6,7.0,11199.0,Intermedia,Azcapotzalco,2016.0,MB0607,-99.16555391655152,19.49762182269757
+Metrobús,Norte 45,6,8.0,11198.0,Intermedia,Azcapotzalco,2016.0,MB0608,-99.15974806958452,19.49634682236948
+Metrobús,Montevideo,6,9.0,11197.0,Transbordo,Gustavo A. Madero / Azcapotzalco,2016.0,MB0609,-99.15305947764816,19.49487546899304
+Metrobús,Lindavista-Vallejo,6,10.0,11194.0,Intermedia,Gustavo A. Madero,2016.0,MB0610,-99.14803869826542,19.49377576677311
+Metrobús,Instituto del Petróleo,6,11.0,11190.0,Intermedia,Gustavo A. Madero,2016.0,MB0611,-99.14517090150208,19.49314612010189
+Metrobús,San Bartolo,6,12.0,11202.0,Intermedia,Gustavo A. Madero,2016.0,MB0612,-99.13911089554117,19.491964128780054
+Metrobús,I.P.N.,6,13.0,11191.0,Terminal,Gustavo A. Madero,2016.0,MB0613,-99.13265423106785,19.490431839892977
+Metrobús,Riobamba,6,14.0,11201.0,Intermedia,Gustavo A. Madero,2016.0,MB0614,-99.12789918100982,19.488650997000587
+Metrobús,Dep. 18 de Marzo,6,15.0,11182.0,Transbordo,Gustavo A. Madero,2016.0,MB0615,-99.12239809152244,19.486601653331064
+Metrobús,La Villa,6,16.0,11193.0,Intermedia,Gustavo A. Madero,2016.0,MB0616,-99.11960442504146,19.485427633059548
+Metrobús,De Los Misterios,6,17.0,11180.0,Transbordo,Gustavo A. Madero,2016.0,MB0617,-99.11794528891907,19.48720715899418
+Metrobús,Hospital Infantil La Villa,6,18.0,11189.0,Transbordo,Gustavo A. Madero,2016.0,MB0618,-99.1147038106798,19.48803558457595
+Metrobús,Gustavo A. Madero,6,19.0,11181.0,Transbordo,Gustavo A. Madero,2016.0,MB0619,-99.11234430828476,19.483890589899836
+Metrobús,Martín Carrera,6,20.0,11196.0,Intermedia,Gustavo A. Madero,2016.0,MB0620,-99.10533511389,19.482038442928182
+Metrobús,Hospital General La Villa,6,21.0,11188.0,Intermedia,Gustavo A. Madero,2016.0,MB0621,-99.10118832718274,19.48036802648085
+Metrobús,San Juan de Aragón,6,22.0,11203.0,Transbordo,Gustavo A. Madero,2016.0,MB0622,-99.09717411378594,19.478759435914025
+Metrobús,Gran Canal,6,23.0,11187.0,Intermedia,Gustavo A. Madero,2016.0,MB0623,-99.09293319630495,19.477094756615855
+Metrobús,Casas Alemán,6,24.0,11176.0,Intermedia,Gustavo A. Madero,2016.0,MB0624,-99.08836688349903,19.474321511242103
+Metrobús,Pueblo San Juan de Aragón,6,25.0,11200.0,Intermedia,Gustavo A. Madero,2016.0,MB0625,-99.08636114506676,19.47100498652424
+Metrobús,Loreto Fabela,6,26.0,11195.0,Intermedia,Gustavo A. Madero,2016.0,MB0626,-99.08098187411964,19.467397728489185
+Metrobús,482,6,27.0,11174.0,Intermedia,Gustavo A. Madero,2016.0,MB0627,-99.07552579067142,19.46686406486538
+Metrobús,414,6,28.0,11171.0,Intermedia,Gustavo A. Madero,2016.0,MB0628,-99.07159997155593,19.46843492694577
+Metrobús,416 Poniente,6,29.0,11173.0,Intermedia,Gustavo A. Madero,2016.0,MB0629,-99.0793796663463,19.472519134207445
+Metrobús,416 Oriente,6,30.0,11172.0,Intermedia,Gustavo A. Madero,2016.0,MB0630,-99.0709115738785,19.47113896849451
+Metrobús,Deportivo Los Galeana,6,31.0,11183.0,Intermedia,Gustavo A. Madero,2016.0,MB0631,-99.07804686498451,19.478460984895214
+Metrobús,Ampliación Providencia,6,32.0,11175.0,Intermedia,Gustavo A. Madero,2016.0,MB0632,-99.07529841640408,19.479846981666174
+Metrobús,Volcán de Fuego,6,33.0,11207.0,Intermedia,Gustavo A. Madero,2016.0,MB0633,-99.07252184166872,19.47696902253344
+Metrobús,La Pradera,6,34.0,11192.0,Intermedia,Gustavo A. Madero,2016.0,MB0634,-99.06867306331192,19.473133545970587
+Metrobús,C. de Bachilleres 9,6,35.0,11178.0,Intermedia,Gustavo A. Madero,2016.0,MB0635,-99.0650015663478,19.46979543177796
+Metrobús,Francisco Morazán,6,36.0,11186.0,Intermedia,Gustavo A. Madero,2016.0,MB0636,-99.0618344542086,19.4670482771434
+Metrobús,Villa de Aragón,6,37.0,11206.0,Terminal,Gustavo A. Madero,2016.0,MB0637,-99.05951753909282,19.464921728470635
+Metrobús,Indios Verdes,7,1.0,,Terminal / Transbordo,Gustavo A. Madero,2018.0,MB0701,-99.12101265908572,19.493039918074693
+Metrobús,Hospital Infantil La Villa,7,2.0,,Terminal / Transbordo,Gustavo A. Madero,2018.0,MB0702,-99.1137844649315,19.48727845482721
+Metrobús,De Los Misterios,7,3.0,,Transbordo,Gustavo A. Madero,2018.0,MB0703,-99.11792283467751,19.48699198907555
+Metrobús,Gustavo A. Madero,7,4.0,,Transbordo,Gustavo A. Madero,2018.0,MB0704,-99.11392804511136,19.483547744379912
+Metrobús,Garrido,7,5.0,,Intermedia,Gustavo A. Madero,2018.0,MB0705,-99.11934970352202,19.483248207318105
+Metrobús,Av. Talismán,7,6.0,,Intermedia,Gustavo A. Madero,2018.0,MB0706,-99.12107849358654,19.478675139039872
+Metrobús,Necaxa,7,7.0,,Intermedia,Gustavo A. Madero,2018.0,MB0707,-99.12231816907185,19.4753757619961
+Metrobús,Excélsior,7,8.0,,Intermedia,Gustavo A. Madero,2018.0,MB0708,-99.12388600766808,19.47119438241247
+Metrobús,Robles Domínguez,7,9.0,,Intermedia,Gustavo A. Madero,2018.0,MB0709,-99.1251776641492,19.46775822598716
+Metrobús,Clave,7,10.0,,Intermedia,Gustavo A. Madero,2018.0,MB0710,-99.12634717960675,19.464646686994367
+Metrobús,Misterios,7,11.0,,Intermedia,Gustavo A. Madero / Cuauhtémoc,2018.0,MB0711,-99.1274380638354,19.461754527157797
+Metrobús,Mercado Beethoven,7,12.0,,Intermedia,Cuauhtémoc,2018.0,MB0712,-99.12912522231824,19.45732546502067
+Metrobús,Peralvillo,7,13.0,,Intermedia,Cuauhtémoc,2018.0,MB0713,-99.1308624235438,19.45311897770829
+Metrobús,Tres Culturas,7,14.0,,Intermedia,Cuauhtémoc,2018.0,MB0714,-99.13282697755515,19.450602338134058
+Metrobús,Glorieta Cuitláhuac,7,15.0,,Intermedia,Cuauhtémoc,2018.0,MB0715,-99.13563175311776,19.447376666880302
+Metrobús,Garibaldi M. Lagunilla,7,16.0,,Intermedia,Cuauhtémoc,2018.0,MB0716,-99.1389717441165,19.44439129247632
+Metrobús,Glorieta Violeta,7,17.0,,Intermedia,Cuauhtémoc,2018.0,MB0717,-99.14326402703652,19.440482268462773
+Metrobús,Hidalgo,7,18.0,,Transbordo,Cuauhtémoc,2018.0,MB0718,-99.14680286341384,19.43729395750408
+Metrobús,El Caballito,7,19.0,,Intermedia,Cuauhtémoc,2018.0,MB0719,-99.14950016993129,19.43559051311373
+Metrobús,Amajac,7,20.0,,Transbordo,Cuauhtémoc,2018.0,MB0720,-99.1533364037392,19.43375827552141
+Metrobús,París,7,21.0,,Intermedia,Cuauhtémoc,2018.0,MB0721,-99.15596957902748,19.432502929390836
+Metrobús,Reforma,7,22.0,,Transbordo,Cuauhtémoc,2018.0,MB0722,-99.15862841311824,19.431252766122142
+Metrobús,Hamburgo,7,23.0,,Transbordo,Cuauhtémoc,2018.0,MB0723,-99.16205189859808,19.42963506084048
+Metrobús,Ahuehuete,7,24.0,,Intermedia,Cuauhtémoc,2018.0,MB0724,-99.1649744695681,19.428260272916862
+Metrobús,El Ángel,7,25.0,,Intermedia,Cuauhtémoc,2018.0,MB0725,-99.168581387889,19.42656643032385
+Metrobús,La Diana,7,26.0,,Intermedia,Cuauhtémoc,2018.0,MB0726,-99.17164795355222,19.42513589931582
+Metrobús,Chapultepec,7,27.0,,Intermedia,Cuauhtémoc,2018.0,MB0727,-99.17428886310516,19.42389167221876
+Metrobús,Gandhi,7,28.0,,Intermedia,Miguel Hidalgo,2018.0,MB0728,-99.1804353388624,19.42399956448173
+Metrobús,Antropología,7,29.0,,Intermedia,Miguel Hidalgo,2018.0,MB0729,-99.18492481378344,19.424688689164427
+Metrobús,Auditorio,7,30.0,,Intermedia,Miguel Hidalgo,2018.0,MB0730,-99.19420066103766,19.42609435056917
+Metrobús,Campo Marte,7,31.0,,Terminal,Miguel Hidalgo,2018.0,MB0731,-99.19935955692463,19.426886529742525
+Metrobús,Indios Verdes,1,1.0,,,Gustavo A. Madero,,MB0101,-99.11971262485864,19.496853351807463
+Metrobús,Buenavista II,1,47.0,,Terminal,Cuauhtémoc,,MB0147,-99.1520594315926,19.446394908252973
+Metrobús,Archivo General,5,17.0,,,Venustiano Carranza,,MB0517,-99.11440793767598,19.437195496143328

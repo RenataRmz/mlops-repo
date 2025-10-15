@@ -1,0 +1,65 @@
+SISTEMA,RUTA,TRAMO,LINEA,longitud,latitud
+Metrobús,Tacubaya - París,Tacubaya - París,07,-99.17378403948494,19.420338769369497
+Metrobús,Buenavista - San Lázaro Ruta Sur,,04,-99.13490687801156,19.42981718010971
+Metrobús,Buenavista - San Lázaro Ruta Sur,,04,-99.12794829103896,19.425472087594024
+Metrobús,Buenavista - San Lázaro Ruta Sur,,04,-99.11597763442316,19.425309915788656
+Metrobús,Buenavista - San Lázaro Ruta Sur,,04,-99.15334511328844,19.436256316781552
+Metrobús,Buenavista - San Lázaro Ruta Norte,Buenavista - San Lázaro,04,-99.13503452367294,19.437361175864588
+Metrobús,A aeropuerto,,04,-99.1367539114972,19.437737873354006
+Metrobús,A aeropuerto,,04,-99.10044682493796,19.43233931953237
+Metrobús,A aeropuerto,,04,-99.09036767328648,19.42896597123868
+Metrobús,Pantitlán - Hidalgo,,04,-99.10730944278896,19.43068884069929
+Metrobús,Alameda Oriente - Pantitlán,,04,-99.06073475727077,19.42282655096176
+Metrobús,Alameda Oriente - Pantitlán,,04,-99.06007530034952,19.422942622912608
+Metrobús,Dr. Gálvez (Línea 1) a Rojo Gómez (Línea 2),Dr.Galvez - RojoGómez,01 y 02,-99.14539508232124,19.38639988043179
+Metrobús,Dr. Gálvez (Línea 1) a Rojo Gómez (Línea 2),Rojo Gómez - Dr. Gálvez,01 y 02,-99.14539628622896,19.386396942461612
+Metrobús,Indios Verdes - El Caminero,Indios Verdes - El Caminero,01,-99.16576703766992,19.388237218775977
+Metrobús,Indios Verdes - Insurgentes,Indios Verdes - Insurgentes,01,-99.14152647671152,19.462973813919813
+Metrobús,Indios Verdes - Doctor Gálvez,Indios Verdes - Doctor Gálvez,01,-99.15850299748352,19.4234641426626
+Metrobús,Buenavista - El Caminero,Buenavista - El Caminero,01,-99.17635968266671,19.358604532100355
+Metrobús,Tepalcates - Tacubaya,Circuito Constitución de Apatzingán - Tepalcates,02,-99.05410977378378,19.391230849655408
+Metrobús,Tepalcates - Tacubaya,Constitución de Apatzingán - Leyes de Reforma,02,-99.06167978908977,19.384623989761135
+Metrobús,Tepalcates - Tacubaya,Leyes de Reforma - Rojo Gómez,02,-99.071876198824,19.385651597299393
+Metrobús,Tepalcates - Tacubaya,Rojo Gómez - Leyes de Reforma,02,-99.0712016662829,19.38394062051379
+Metrobús,Tepalcates - Tacubaya,Rojo Gómez - De La Salle,02,-99.13022746707723,19.396727853148764
+Metrobús,Tepalcates - Tacubaya,Circuito De La Salle - Tacubaya,02,-99.18676688771389,19.40580845484108
+Metrobús,Tepalcates - Etiopía,Circuito Constitución de Apatzingán- Tepalcates,02,-99.05410977378378,19.391230849655408
+Metrobús,Tepalcates - Etiopía,Constitución de Apatzingán - Leyes de Reforma,02,-99.06167978908977,19.384623989761135
+Metrobús,Tepalcates - Etiopía,Leyes de Reforma - Rojo Gómez,02,-99.071876198824,19.385651597299393
+Metrobús,Tepalcates - Etiopía,Rojo Gómez - Leyes de Reforma,02,-99.0712016662829,19.38394062051379
+Metrobús,Tepalcates - Etiopía,Rojo Gómez - Etiopía,02,-99.11588968309,19.39497097246372
+Metrobús,Tepalcates - Colonia del Valle,Circuito Constitución de Apatzingán - Tepalcates,02,-99.05410977378378,19.391230849655408
+Metrobús,Tepalcates - Colonia del Valle,Constitución de Apatzingán - Leyes de Reforma,02,-99.06167978908977,19.384623989761135
+Metrobús,Tepalcates - Colonia del Valle,Leyes de Reforma - Rojo Gómez,02,-99.071876198824,19.385651597299393
+Metrobús,Tepalcates - Colonia del Valle,Rojo Gómez - Leyes de Reforma,02,-99.0712016662829,19.38394062051379
+Metrobús,Tepalcates - Colonia del Valle,Rojo Gómez - Colonia del Valle,02,-99.13105094783984,19.3953647638736
+Metrobús,Tenayuca - Pueblo Santa Cruz Atoyac,Tenayuca - Balderas,03,-99.15208306485616,19.478833871020736
+Metrobús,Tenayuca - Pueblo Santa Cruz Atoyac,Balderas - Cuauhtémoc,03,-99.15124239213088,19.42647426701334
+Metrobús,Tenayuca - Pueblo Santa Cruz Atoyac,Cuauhtémoc - Balderas,03,-99.15086448050262,19.426034859306025
+Metrobús,Tenayuca - Pueblo Santa Cruz Atoyac,Cuauhtémoc - Pueblo Santa Cruz Atoyac,03,-99.15635313925723,19.39809433690121
+Metrobús,Tenayuca - Balderas,Tenayuca - Balderas,03,-99.15208306485616,19.478833871020736
+Metrobús,Tenayuca - La Raza,Tenayuca - Hospital La Raza,03,-99.1558309864196,19.498927036502646
+Metrobús,Tenayuca - La Raza,Circuito Hospital La Raza - La Raza,03,-99.1421820268561,19.466958533748308
+Metrobús,Tenayuca - Buenavista,Tenayuca - Buenavista,03,-99.15278573554848,19.48552358540655
+Metrobús,Río de los Remedios - Preparatoria 1,Río de los Remedios - Preparatoria 1,05,-99.1090260497896,19.390978742107585
+Metrobús,Río de los Remedios - San Lázaro,Río de los Remedios - San Lázaro,05,-99.10174756943624,19.469279059190455
+Metrobús,San Lázaro - Las Bombas,San Lázaro - Las Bombas,05,-99.11189298134418,19.37207640010267
+Metrobús,El Rosario - Villa de Aragón,El Rosario - La Villa,06,-99.16251269057528,19.498233061680068
+Metrobús,El Rosario - Villa de Aragón,La Villa - Delegación Gustavo A. Madero,06,-99.1161177985199,19.48373368638961
+Metrobús,El Rosario - Villa de Aragón,Delegación Gustavo A. Madero - La Villa,06,-99.11552453679604,19.48670693807171
+Metrobús,El Rosario - Villa de Aragón,Delegación Gustavo A. Madero - Loreto Fabela,06,-99.09570640170844,19.47696660969658
+Metrobús,El Rosario - Villa de Aragón,Loreto Fabela - La Pradera,06,-99.07359268893426,19.468864358204897
+Metrobús,El Rosario - Villa de Aragón,La Pradera - Loreto Fabela,06,-99.07627525666965,19.47542053597935
+Metrobús,El Rosario - Villa de Aragón,La Pradera - Villa de Aragón,06,-99.06412120861972,19.469008006441516
+Metrobús,El Rosario - IPN,El Rosario - IPN,06,-99.16911562176723,19.500095953262164
+Metrobús,Indios Verdes - Campo Marte,Indios Verdes - Circuito La Villa,07,-99.11938351610628,19.49108389645598
+Metrobús,Indios Verdes - Campo Marte,Circuito La Villa Poniente,07,-99.11822857013836,19.486261840229464
+Metrobús,Indios Verdes - Campo Marte,Circuito La Villa Oriente,07,-99.11536832998216,19.485422989224052
+Metrobús,Indios Verdes - Campo Marte,Circuito La Villa - Campo Marte,07,-99.1517395622436,19.44310864677164
+Metrobús,Hospital Infantil La Villa - Campo Marte,Hospital Infantil La Villa - Garrido,07,-99.11707363945264,19.486919260575032
+Metrobús,Hospital Infantil La Villa - Campo Marte,Garrido - Hospital Infantil La Villa,07,-99.11522865107024,19.484437411822594
+Metrobús,Hospital Infantil La Villa - Campo Marte,Garrido - Campo Marte,07,-99.1517395622436,19.44310864677164
+Metrobús,Juárez - Río Frío,Río Frío - Juárez,02 y 03,-99.12170971995214,19.40072710329031
+Metrobús,Río Frío - Juárez,Río Frío - Juárez,02 y 03,-99.12556194604514,19.400753366862546
+Metrobús,Sta. Cruz Atoyac - Indios Verdes,Sta. Cruz Atoyac - Indios Verdes,03,-99.14648053255982,19.43563796746318
+Metrobús,Indios Verdes - Sta. Cruz Atoyac,Sta. Cruz Atoyac - Indios Verdes,03,-99.14662079789396,19.435694928370843
