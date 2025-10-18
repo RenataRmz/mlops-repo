@@ -9,17 +9,31 @@ import os
 from sklearn.neighbors import BallTree
 from geopy.geocoders import Nominatim
 import geopandas as gpd
-from shapely.geometry import Point
 from pyproj import Transformer
-from shapely.ops import transform
 import unicodedata
 
-# --- Inicialización de estado de sesión para resultados (AÑADIDO) ---
+# --- Inicialización de estado de sesión para resultados ---
 if 'prediction_result' not in st.session_state:
     st.session_state.prediction_result = None
 if 'show_prediction_results' not in st.session_state:
     st.session_state.show_prediction_results = False
 # --- FIN Inicialización de estado de sesión ---
+
+
+# --- Definición de Límites Geográficos (CDMX) ---
+# Límites aproximados de la Ciudad de México para restricción del modelo
+CDMX_BOUNDS = {
+    "lat_min": 19.00,
+    "lat_max": 19.65,
+    "lon_min": -99.38,
+    "lon_max": -98.90
+}
+
+def is_inside_cdmx(lat, lon):
+    """Verifica si las coordenadas caen dentro de los límites de la CDMX."""
+    return (CDMX_BOUNDS["lat_min"] <= lat <= CDMX_BOUNDS["lat_max"] and
+            CDMX_BOUNDS["lon_min"] <= lon <= CDMX_BOUNDS["lon_max"])
+# --- FIN Definición de Límites Geográficos ---
 
 
 # --- Construcción de rutas absolutas ---
@@ -57,6 +71,60 @@ POI_ICON_MAP = {
 # Configuración de la página
 st.set_page_config(layout="wide", page_title="Predictor de Precios de Renta")
 
+# --- Colores para las capas de POIs (relleno) ---
+POI_COLORS_MAP = {
+    'escuelas_publicas': (30, 144, 255, 255), # DodgerBlue (Azul)
+    'escuelas_privadas_con_coordenadas': (255, 165, 0, 255), # Orange (Naranja)
+    'hospitales_y_centros_de_salud_con_coordenadas': (220, 20, 60, 255), # Crimson (Rojo Oscuro)
+    'metrobus_estaciones_con_coordenadas': (50, 205, 50, 255), # LimeGreen (Verde Brillante)
+    'stc_metro_estaciones_utm14n_con_coordenadas': (255, 105, 180, 255), # HotPink (Rosa)
+    'areas_verdes_filtrado': (34, 139, 34, 255), # ForestGreen (Verde Bosque)
+}
+# --- FIN Colores POI ---
+
+# --- Funciones de utilidad ---
+def rgb_to_hex(r, g, b):
+    # Función de utilidad para convertir RGB a Hex
+    return f'#{r:02x}{g:02x}{b:02x}'
+
+def render_poi_legend():
+    """Genera y renderiza la leyenda de POIs."""
+    st.markdown("---") # Separador para la leyenda
+    
+    legend_content = []
+    
+    # Agregar la leyenda de POIs
+    for key, (r, g, b, a) in POI_COLORS_MAP.items():
+        hex_color = rgb_to_hex(r, g, b)
+        name = key.replace('_', ' ').title()
+        
+        # Estilo para cada fila de la leyenda
+        row_html = (
+            f"<tr>"
+            f"<td style='padding: 2px 0; width: 25px;'>"
+            f"<div style='width: 12px; height: 12px; border-radius: 50%; background-color: {hex_color}; "
+            f"display: inline-block; border: 1px solid #444;'></div>"
+            f"</td>"
+            f"<td style='padding: 2px 0;'>{name}</td>"
+            f"</tr>"
+        )
+        legend_content.append(row_html)
+
+    # Estructura principal de la tabla de leyenda
+    legend_html = (
+        "<div style='font-size: 14px; margin-bottom: 5px; margin-top: 10px;'><b>Leyenda de Puntos de Interés</b></div>"
+        "<table style='width: 100%; border-collapse: collapse; max-width: 400px;'>"
+    )
+    legend_html += "".join(legend_content)
+    legend_html += "</table>"
+
+    st.markdown(legend_html, unsafe_allow_html=True)
+
+def render_disclaimer():
+    """Renderiza el descargo de responsabilidad sobre la restricción de CDMX."""
+    st.markdown("---")
+    st.warning('⚠️ **AVISO IMPORTANTE:** El modelo de predicción de precios solo fue entrenado con datos de la Ciudad de México. **Los resultados para ubicaciones fuera de esta área no son fiables.**')
+    
 # --- Carga del Modelo y Features ---
 @st.cache_resource
 def load_model():
@@ -248,8 +316,10 @@ def user_input_features():
     recamaras = st.sidebar.slider('Recámaras', 0, 10, 2)
     estacionamiento = st.sidebar.slider('Estacionamientos', 0, 5, 1)
     lote_m2 = st.sidebar.slider('Superficie del Lote (m²)', 20, 1000, 150)
-    es_amueblado = st.sidebar.checkbox('¿Es amueblado?', value=False)
-    es_penthouse = st.sidebar.checkbox('¿Es penthouse?', value=False)
+    # --- CHECKBOXES CON KEYS ÚNICAS ---
+    es_amueblado = st.sidebar.checkbox('¿Es amueblado?', value=False, key="amueblado_check")
+    es_penthouse = st.sidebar.checkbox('¿Es penthouse?', value=False, key="penthouse_check")
+    # --- FIN CHECKBOXES CON KEYS ÚNICAS ---
 
     # --- Cálculo dinámico de distancias a POIs ---
     # Convertir la coordenada del inmueble a radianes
@@ -360,114 +430,113 @@ else:
     st.stop()
 
 # --- Contenido Principal ---
-st.title('Plataforma de Sugerencia de Precio de Renta')
+st.title('Plataforma de Sugerencia de Precio de Renta en la CDMX') # Título Actualizado
+
+# --- DISCLAMER DE RESTRICCIÓN GEOGRÁFICA (Antiguo) ---
+# Se elimina de aquí para moverse a la función render_disclaimer()
+# --- FIN DISCLAMER ---
 
 tab1, tab2 = st.tabs(["Ubicación del Inmueble", "Predicción de Precio"])
 
 # --- Pestaña de Visualización de Mapa ---
 with tab1:
-    st.header('Mapa de Ubicación y Puntos de Interés')
+    with st.container(): # <--- CONTENEDOR AÑADIDO
+        st.header('Mapa de Ubicación y Puntos de Interés')
 
-    # Datos para el punto del inmueble introducido
-    property_location_data = pd.DataFrame({
-        'name': ['Inmueble Introducido'],
-        'latitude': [lat],
-        'longitude': [lon],
-        'icon_id': ['marker'],
-        'fill_color': [[255, 30, 0, 255]] # Rojo para el relleno
-    })
+        # Datos para el punto del inmueble introducido
+        property_location_data = pd.DataFrame({
+            'name': ['Inmueble Introducido'],
+            'latitude': [lat],
+            'longitude': [lon],
+            'icon_id': ['marker'],
+            'fill_color': [[255, 30, 0, 255]] # Rojo para el relleno
+        })
 
-    st.write("Mostrando la ubicación del inmueble y puntos de interés seleccionados.")
-    
-    # Configuración de la vista inicial del mapa centrada en el inmueble
-    view_state = pdk.ViewState(
-        latitude=lat,
-        longitude=lon,
-        zoom=14,
-        pitch=50,
-    )
-
-    # Capa para el punto del inmueble (ICONLAYER)
-    property_layer = pdk.Layer(
-        'IconLayer',
-        data=property_location_data,
-        get_position='[longitude, latitude]',
-        get_icon='icon_id',
-        get_size=5,
-        size_scale=7, # Tamaño intermedio (POIs usan 5)
-        get_color='fill_color',
-        pickable=True,
-        icon_atlas=ICON_URL,
-        icon_mapping=ICON_MAPPING,
-    )
-
-    # Tooltip para el inmueble y los POIs
-    tooltip = {
-        "html": "<b>{name}</b>",
-        "style": {
-            "backgroundColor": "steelblue",
-            "color": "white"
-        }
-    }
-
-    layers = [property_layer] # Inmueble introducido
-
-    # Colores para las capas de POIs (relleno)
-    poi_colors = {
-        'escuelas_publicas': [30, 144, 255, 255], # DodgerBlue (Azul)
-        'escuelas_privadas_con_coordenadas': [255, 165, 0, 255], # Orange (Naranja)
-        'hospitales_y_centros_de_salud_con_coordenadas': [220, 20, 60, 255], # Crimson (Rojo Oscuro)
-        'metrobus_estaciones_con_coordenadas': [50, 205, 50, 255], # LimeGreen (Verde Brillante)
-        'stc_metro_estaciones_utm14n_con_coordenadas': [255, 105, 180, 255], # HotPink (Rosa)
-        'areas_verdes_filtrado': [34, 139, 34, 255], # ForestGreen (Verde Bosque)
-    }
-
-    # --- Lógica para la capa de Iconos (POIs) ---
-    visible_pois_dfs = []
-    for key, show in show_pois.items():
-        if show and key in pois_data and not pois_data[key].empty:
-            poi_df = pois_data[key].copy()
-            
-            # Asignar el ID del ícono
-            poi_df['icon_id'] = POI_ICON_MAP.get(key, 'marker')
-            
-            # Obtener el color de relleno
-            fill_color = poi_colors.get(key, [128, 128, 128, 255])
-            
-            # Asignar el color de relleno a la columna 'fill_color'
-            poi_df['fill_color'] = [fill_color] * len(poi_df)
-            
-            visible_pois_dfs.append(poi_df)
-
-    # Si hay POIs para mostrar, crear la IconLayer
-    if visible_pois_dfs:
-        combined_pois_df = pd.concat(visible_pois_dfs, ignore_index=True)
+        st.write("Mostrando la ubicación del inmueble y puntos de interés seleccionados.")
         
-        icon_layer = pdk.Layer(
+        # Configuración de la vista inicial del mapa centrada en el inmueble
+        view_state = pdk.ViewState(
+            latitude=lat,
+            longitude=lon,
+            zoom=14,
+            pitch=50,
+        )
+
+        # Capa para el punto del inmueble (ICONLAYER)
+        property_layer = pdk.Layer(
             'IconLayer',
-            data=combined_pois_df,
+            data=property_location_data,
+            get_position='[longitude, latitude]',
             get_icon='icon_id',
             get_size=5,
-            size_scale=5,
-            get_position='[longitude, latitude]',
+            size_scale=7, # Tamaño intermedio (POIs usan 5)
             get_color='fill_color',
             pickable=True,
             icon_atlas=ICON_URL,
             icon_mapping=ICON_MAPPING,
         )
-        layers.append(icon_layer)
-    # --- FIN Lógica IconLayer ---
+
+        # Tooltip para el inmueble y los POIs
+        tooltip = {
+            "html": "<b>{name}</b>",
+            "style": {
+                "backgroundColor": "steelblue",
+                "color": "white"
+            }
+        }
+
+        layers = [property_layer] # Inmueble
+
+        # --- Lógica para la capa de Iconos (POIs) ---
+        visible_pois_dfs = []
+        for key, show in show_pois.items():
+            if show and key in pois_data and not pois_data[key].empty:
+                poi_df = pois_data[key].copy()
+                
+                # Asignar el ID del ícono
+                poi_df['icon_id'] = POI_ICON_MAP.get(key, 'marker')
+                
+                # Obtener el color de relleno
+                fill_color = POI_COLORS_MAP.get(key, (128, 128, 128, 255))
+                
+                # Asignar el color de relleno a la columna 'fill_color'
+                poi_df['fill_color'] = [list(fill_color)] * len(poi_df)
+                
+                visible_pois_dfs.append(poi_df)
+
+        # Si hay POIs para mostrar, crear la IconLayer
+        if visible_pois_dfs:
+            combined_pois_df = pd.concat(visible_pois_dfs, ignore_index=True)
+            
+            icon_layer = pdk.Layer(
+                'IconLayer',
+                data=combined_pois_df,
+                get_icon='icon_id',
+                get_size=5,
+                size_scale=5,
+                get_position='[longitude, latitude]',
+                get_color='fill_color',
+                pickable=True,
+                icon_atlas=ICON_URL,
+                icon_mapping=ICON_MAPPING,
+            )
+            layers.append(icon_layer)
+        # --- FIN Lógica IconLayer ---
 
 
-    # Renderizar el mapa
-    deck = pdk.Deck(
-        map_style='mapbox://styles/mapbox/light-v9',
-        initial_view_state=view_state,
-        layers=layers,
-        tooltip=tooltip
-    )
-    st.pydeck_chart(deck)
-
+        # Renderizar el mapa
+        deck = pdk.Deck(
+            map_style='mapbox://styles/mapbox/light-v9',
+            initial_view_state=view_state,
+            layers=layers,
+            tooltip=tooltip
+        )
+        st.pydeck_chart(deck)
+        
+        # --- RENDERIZADO DE LEYENDA (FINAL DE TAB 1) ---
+        render_poi_legend()
+        # --- RENDERIZADO DEL DISCLAIMER (FINAL DE TAB 1) ---
+        render_disclaimer() 
 
 # --- Pestaña de Predicción ---
 with tab2:
@@ -501,21 +570,26 @@ with tab2:
         st.json(census_features)
 
         if st.button('Predecir Precio de Renta'):
-            try:
-                # El DataFrame 'input_df' ya tiene las columnas en el orden correcto
-                prediction = model.predict(input_df)
-                
-                # --- ALMACENAR RESULTADO EN SESSION STATE (MODIFICADO) ---
-                st.session_state.prediction_result = prediction[0]
-                st.session_state.show_prediction_results = True
-                # --- FIN ALMACENAR RESULTADO ---
+            # 1. Verificar límites geográficos antes de predecir
+            if not is_inside_cdmx(lat, lon):
+                st.error(f"Error de rango geográfico: La ubicación introducida ({lat:.4f}, {lon:.4f}) está fuera de la Ciudad de México. El modelo de predicción solo es válido para esta región.")
+                st.session_state.show_prediction_results = False
+            else:
+                try:
+                    # El DataFrame 'input_df' ya tiene las columnas en el orden correcto
+                    prediction = model.predict(input_df)
+                    
+                    # --- ALMACENAR RESULTADO EN SESSION STATE ---
+                    st.session_state.prediction_result = prediction[0]
+                    st.session_state.show_prediction_results = True
+                    # --- FIN ALMACENAR RESULTADO ---
 
-            except Exception as e:
-                st.error(f"Error al realizar la predicción: {e}")
-                st.warning("Asegúrate de que las características de entrada coincidan con las que el modelo fue entrenado.")
-                st.session_state.show_prediction_results = False # Reiniciar en caso de error
+                except Exception as e:
+                    st.error(f"Error al realizar la predicción: {e}")
+                    st.warning("Asegúrate de que las características de entrada coincidan con las que el modelo fue entrenado.")
+                    st.session_state.show_prediction_results = False # Reiniciar en caso de error
         
-        # --- MOSTRAR RESULTADO PERSISTENTE (AÑADIDO) ---
+        # --- MOSTRAR RESULTADO PERSISTENTE ---
         if st.session_state.show_prediction_results and st.session_state.prediction_result is not None:
             st.subheader('Resultado de la Predicción')
             st.success(f'El precio de renta sugerido es: ${st.session_state.prediction_result:,.2f}')
@@ -523,3 +597,6 @@ with tab2:
 
     else:
         st.error('Error: No se pudo cargar el modelo. Asegúrate de que el archivo `models/xgb_tuned_model.joblib` exista.')
+
+    # --- RENDERIZADO DE DISCLAIMER (FINAL DE TAB 2) ---
+    render_disclaimer()
