@@ -17,6 +17,8 @@ if 'prediction_result' not in st.session_state:
     st.session_state.prediction_result = None
 if 'show_prediction_results' not in st.session_state:
     st.session_state.show_prediction_results = False
+if 'price_analysis' not in st.session_state:
+    st.session_state.price_analysis = None
 # --- FIN Inicialización de estado de sesión ---
 
 
@@ -48,6 +50,7 @@ MODEL_PATH = os.path.join(PROJECT_ROOT, 'models/xgboost_tuned_pipeline.joblib')
 FEATURES_PATH = os.path.join(PROJECT_ROOT, 'data/processed/final_features.json')
 POIS_PATH_PATTERN = os.path.join(PROJECT_ROOT, 'data/processed/csv/**/*.csv')
 CENSUS_DATA_PATH = os.path.join(PROJECT_ROOT, 'data/processed/INEGI/colonia')
+LOGO_PATH = os.path.join(SCRIPT_DIR, 'assets', 'logo_small.jpg')
 
 # --- Configuración de Iconos para el Mapa ---
 ICON_URL = "https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/icon-atlas.png"
@@ -124,6 +127,69 @@ def render_disclaimer():
     """Renderiza el descargo de responsabilidad sobre la restricción de CDMX."""
     st.markdown("---")
     st.warning('⚠️ **AVISO IMPORTANTE:** El modelo de predicción de precios solo fue entrenado con datos de la Ciudad de México. **Los resultados para ubicaciones fuera de esta área no son fiables.**')
+
+def generate_explanation(offered_price, predicted_price, assessment, features, dist_features):
+    """Genera una explicación en lenguaje natural sobre el análisis de precios."""
+    
+    diff_percent = ((offered_price - predicted_price) / predicted_price) * 100
+    
+    header = f"### Evaluador de Precios Automático\n\n"
+    
+    if assessment == "Justo":
+        intro = (
+            f"El precio ofertado de ${offered_price:,.2f} se considera **justo**. \n "
+            f"Está dentro de un rango de variación del 10% (específicamente, un {diff_percent:.1f}% {'por encima' if diff_percent > 0 else 'por debajo'}) \n"
+            f"de nuestra estimación para un inmueble con estas características."
+        )
+    elif assessment == "Una Buena Oferta (Barato)":
+        intro = (
+            f"¡Excelente! El precio ofertado de ${offered_price:,.2f} parece ser una **muy buena oferta**. \n"
+            f"Es un {abs(diff_percent):.1f}% más bajo que nuestra estimación."
+        )
+    else: # Caro
+        intro = (
+            f"El precio ofertado de **${offered_price:,.2f}** parece ser **elevado**. \n"
+            f"Es un {diff_percent:.1f}% más alto que nuestra estimación de **${predicted_price:,.2f}**."
+        )
+
+    # Detalles de las características
+    recamaras = features['recamaras'].iloc[0]
+    estacionamiento = features['estacionamiento'].iloc[0]
+    lote_m2 = features['lote_m2'].iloc[0]
+    
+    size_desc = "mediano"
+    if lote_m2 < 70:
+        size_desc = "pequeño"
+    elif lote_m2 > 200:
+        size_desc = "grande"
+
+    details = (
+        f"\n\n**Análisis de Características:**\n\n"
+        f"- **Dimensiones y Comodidades:** Es un inmueble de tamaño **{size_desc}** ({lote_m2} m²) con **{recamaras} recámara(s)** y **{estacionamiento} lugar(es) de estacionamiento**. "
+        f"Estas son variables clave que influyen directamente en el precio."
+    )
+
+    # Detalles de proximidad
+    dist_metro = dist_features.get('dist_m_stc_metro_estaciones_utm14n_con_coordenadas', float('inf'))
+    dist_metrobus = dist_features.get('dist_m_metrobus_estaciones_con_coordenadas', float('inf'))
+    dist_hospital = dist_features.get('dist_m_hospitales_y_centros_de_salud_con_coordenadas', float('inf'))
+    dist_parque = dist_features.get('dist_m_areas_verdes_filtrado', float('inf'))
+
+    proximity_details = (
+        f"\n- **Ubicación y Proximidad:** La ubicación es un factor determinante. Este inmueble se encuentra a:\n"
+        f"  - **{dist_metro:,.0f} metros** de la estación de Metro más cercana.\n"
+        f"  - **{dist_metrobus:,.0f} metros** de la estación de Metrobús más cercana.\n"
+        f"  - **{dist_hospital:,.0f} metros** del hospital o centro de salud más cercano.\n"
+        f"  - **{dist_parque:,.0f} metros** del área verde más cercana.\n\n"
+        f"La cercanía a estos servicios justifica en gran medida el valor estimado."
+    )
+    
+    conclusion = (
+        "**Conclusión:** Basado en nuestro modelo, que considera miles de propiedades y sus características en la CDMX, "
+        "la evaluación proporcionada refleja cómo se compara la oferta con el mercado actual."
+    )
+
+    return f"{header}{intro}{details}{proximity_details}{conclusion}"
     
 # --- Carga del Modelo y Features ---
 @st.cache_resource
@@ -273,6 +339,9 @@ if 'lon' not in st.session_state:
 
 
 # --- Barra Lateral para Entradas de Predicción ---
+if os.path.exists(LOGO_PATH):
+    st.sidebar.image(LOGO_PATH)
+
 st.sidebar.header('Parámetros del Inmueble para Predicción')
 
 def user_input_features():
@@ -313,6 +382,7 @@ def user_input_features():
     municipality = st.sidebar.selectbox("Seleccione la Alcaldía", alcaldias_cdmx, index=2) # Default a Benito Juarez
 
     # Características que el usuario puede introducir directamente
+    offered_price = st.sidebar.number_input('Precio de Renta Ofertado (MXN)', min_value=0, value=15000, step=500)
     recamaras = st.sidebar.slider('Recámaras', 0, 10, 2)
     estacionamiento = st.sidebar.slider('Estacionamientos', 0, 5, 1)
     lote_m2 = st.sidebar.slider('Superficie del Lote (m²)', 20, 1000, 150)
@@ -404,7 +474,7 @@ def user_input_features():
     else:
         features_df = pd.DataFrame()
 
-    return features_df, lat, lon, distance_features, census_features
+    return features_df, lat, lon, distance_features, census_features, offered_price
 
 st.sidebar.header('Visualización de Mapa')
 
@@ -425,12 +495,13 @@ if pois_data:
              show_pois[key] = st.sidebar.checkbox(f"{key.replace('_', ' ').title()} ({len(pois_data[key])} puntos)", value=False)
 
 if final_features:
-    input_df, lat, lon, distance_features, census_features = user_input_features()
+    input_df, lat, lon, distance_features, census_features, offered_price = user_input_features()
 else:
     st.stop()
 
 # --- Contenido Principal ---
-st.title('Plataforma de Sugerencia de Precio de Renta en la CDMX') # Título Actualizado
+st.title('Renta Inteligente 💡')
+#st.subheader('Renta Inteligente 💡')
 
 # --- DISCLAMER DE RESTRICCIÓN GEOGRÁFICA (Antiguo) ---
 # Se elimina de aquí para moverse a la función render_disclaimer()
@@ -547,6 +618,7 @@ with tab2:
         
         # Mostrar solo las características que el usuario introdujo
         user_inputs = {
+            'Precio Ofertado': f"${offered_price:,.2f}",
             'recamaras': input_df['recamaras'].iloc[0],
             'estacionamiento': input_df['estacionamiento'].iloc[0],
             'lote_m2': input_df['lote_m2'].iloc[0],
@@ -569,7 +641,7 @@ with tab2:
         st.write("Características del Censo (punto más cercano):")
         st.json(census_features)
 
-        if st.button('Predecir Precio de Renta'):
+        if st.button('Analizar Precio Ofertado'):
             # 1. Verificar límites geográficos antes de predecir
             if not is_inside_cdmx(lat, lon):
                 st.error(f"Error de rango geográfico: La ubicación introducida ({lat:.4f}, {lon:.4f}) está fuera de la Ciudad de México. El modelo de predicción solo es válido para esta región.")
@@ -578,9 +650,31 @@ with tab2:
                 try:
                     # El DataFrame 'input_df' ya tiene las columnas en el orden correcto
                     prediction = model.predict(input_df)
+                    predicted_price = prediction[0]
+                    
+                    # --- LÓGICA DE COMPARACIÓN Y ANÁLISIS ---
+                    diff_percent = ((offered_price - predicted_price) / predicted_price)
+                    
+                    if abs(diff_percent) <= 0.10:
+                        assessment = "Justo"
+                        icon = "⚖️"
+                    elif diff_percent < -0.10:
+                        assessment = "Una Buena Oferta (Barato)"
+                        icon = "✅"
+                    else:
+                        assessment = "Caro"
+                        icon = "⚠️"
+
+                    explanation = generate_explanation(offered_price, predicted_price, assessment, input_df, distance_features)
                     
                     # --- ALMACENAR RESULTADO EN SESSION STATE ---
-                    st.session_state.prediction_result = prediction[0]
+                    st.session_state.prediction_result = predicted_price
+                    st.session_state.price_analysis = {
+                        "offered_price": offered_price,
+                        "assessment": assessment,
+                        "icon": icon,
+                        "explanation": explanation
+                    }
                     st.session_state.show_prediction_results = True
                     # --- FIN ALMACENAR RESULTADO ---
 
@@ -590,9 +684,19 @@ with tab2:
                     st.session_state.show_prediction_results = False # Reiniciar en caso de error
         
         # --- MOSTRAR RESULTADO PERSISTENTE ---
-        if st.session_state.show_prediction_results and st.session_state.prediction_result is not None:
-            st.subheader('Resultado de la Predicción')
-            st.success(f'El precio de renta sugerido es: ${st.session_state.prediction_result:,.2f}')
+        if st.session_state.show_prediction_results and st.session_state.price_analysis is not None:
+            analysis = st.session_state.price_analysis
+            predicted = st.session_state.prediction_result
+            
+            st.subheader('Resultado del Análisis')
+            
+            st.metric(
+                label=f"Evaluación del Precio Ofertado ({analysis['icon']})",
+                value=analysis['assessment'],
+                help=f"Precio Ofertado: ${analysis['offered_price']:,.2f} | Precio Estimado por Modelo: ${predicted:,.2f}"
+            )
+
+            st.markdown(analysis['explanation'])
         # --- FIN MOSTRAR RESULTADO PERSISTENTE ---
 
     else:
